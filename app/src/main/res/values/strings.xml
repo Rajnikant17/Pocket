@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PocketApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_msg">Something went wrong From Server or Network Problem </string>
+    <string name="user_id">User Id : </string>
+    <string name="number_of_post"> Number of posts : </string>
+    <string name="name"> Name </string>
+    <string name="email"> Email id </string>
+    <string name="title"> Title </string>
+    <string name="body"> Body </string>
+    <string name="user_detail"> User Details </string>
+</resources>

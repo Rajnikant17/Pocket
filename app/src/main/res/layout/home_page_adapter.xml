@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="noOfPostAndUserdIdData"
+            type="com.example.apiservicesmodule.models.ModelClassGroupedByUserId" />
+    </data>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:id="@+id/ll_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/user_id"
+            />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@{noOfPostAndUserdIdData.user_id}"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/number_of_post"
+            />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_numberofpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@{noOfPostAndUserdIdData.noOfPosts}"
+        />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_200"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

@@ -1,0 +1,3 @@
+include ':ApiServices'
+include ':app'
+rootProject.name = "PocketApp"
